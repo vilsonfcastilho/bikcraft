@@ -401,7 +401,7 @@ img {
 }
 
 .js [data-slide] > .active {
-	position: absolute;
+	position: relative;
 	opacity: 1;
 	transition: opacity 500ms;
 }
