@@ -420,11 +420,39 @@ img {
 	border: none;
 	padding: 0;
 	border-radius: 6px;
-	text-indent: -99px
+	text-indent: -99px;
 	overflow: hidden;
 	background: #1d1d1d;
 }
 
 .js [data-slide-nav] button.active {
 	background: #fec63e;
+}
+
+.js [data-anime] {
+	opacity: 0;
+}
+
+.js .fadeInDown {
+	transform: translate3d(0, -20px, 0);
+}
+
+.js .anime {
+	opacity: 1;
+	transform: none;
+	transition: opacity 800ms, transform 800ms;
+}
+
+.nao_aparece {
+	visibility: hidden;
+	position: absolute;
+	height: 0px;
+}
+
+#form-sucesso {
+	color: #31aa49;
+}
+
+#form-erro {
+	color: #f64540;
 }

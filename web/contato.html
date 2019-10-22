@@ -33,22 +33,28 @@
 
 		<section class="introducao_interna interna_contato">
 			<div class="container">
-				<h1>Contato</h1>
-				<p>tire suas dúvidas com a gente</p>
+				<h1 class="fadeInDown" data-anime="400">Contato</h1>
+				<p class="fadeInDown" data-anime="800">tire suas dúvidas com a gente</p>
 			</div>
 		</section>
 
-		<section class="contato container">
-			<form id="form_orcamento" class="contato_form grid-8">
+		<section class="contato container fadeInDown" data-anime="1200">
+			<form id="form_orcamento" class="contato_form grid-8 formphp" method="POST" action="./enviar.php">
 				<label for="nome">Nome</label>
-				<input type="text" name="nome">
+				<input type="text" id="nome" name="nome" required>
 				<label for="email">E-mail</label>
-				<input type="text" name="email">
+				<input type="email" id="email" name="email" required>
 				<label for="telefone">Telefone</label>
-				<input type="text" name="telefone">
-				<label for="espec">Especificações</label>
-				<textarea id="espec"></textarea>
-				<button type="submit" class="btn btn-preto">Enviar</button>
+				<input type="text" id="telefone" name="telefone">
+
+					<label class="nao_aparece">Se você não é um robô, deixe em branco.</label>
+					<input type="text" name="leaveblank" class="nao_aparece">
+					<label class="nao_aparece">Se você não é um robô, não mude este campo.</label>
+					<input type="text" name="dontchange" class="nao_aparece" value="http://">
+
+				<label for="mensagem">Mensagem</label>
+				<textarea id="mensagem" name="mensagem" required></textarea>
+				<button id="enviar" name="enviar" type="submit" class="btn btn-preto">Enviar</button>
 			</form>
 			<div class="contato_dados grid-8">
 				<h3>Dados</h3>
@@ -65,7 +71,7 @@
 			</div>
 		</section>
 
-		<section class="container contato_mapa">
+		<section class="container contato_mapa fadeInDown" data-anime="1600">
 			<a href="http://google.com/maps" class="grid-16"><img src="img/endereco-bikcraft.jpg" alt="Endereço da Bikcraft"></a>
 		</section>
 
@@ -110,5 +116,9 @@
 				</div>
 			</div>
 		</footer>
+
+		<script type="text/javascript" src="./js/simple-anime.js"></script>
+		<script type="text/javascript" src="./js/simple-form.js"></script>
+		<script type="text/javascript" src="./js/script.js"></script>
 	</body>
 </html>
