@@ -1,8 +1,8 @@
-/* Estilo para Tablet*/
+/* Estilo para Tablet */
 
 @media only screen and (min-width: 768px) and (max-width: 979px) {
 
-/* Qualidade Home*/
+/* Qualidade Home */
 .qualidade:after {
 	right: 66px;
 }
@@ -46,9 +46,9 @@
 
 
 
-} /* Final do estilo Tablet*/
+} /* Final do estilo Tablet */
 
-/* Estilo para Smartphone*/
+/* Estilo para Smartphone */
 
 @media only screen and (max-width: 787px) {
 
@@ -105,7 +105,7 @@
 	padding-top: 10px;
 }
 
-/* Qualidade Home*/
+/* Qualidade Home */
 .qualidade:after {
 	display: none;
 }
@@ -163,5 +163,4 @@
 	margin-bottom: 40px;
 }
 
-} /* Final do estilo Smartphone*/
-
+} /* Final do estilo Smartphone */
